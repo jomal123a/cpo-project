@@ -6,8 +6,6 @@ function [y] = adjust_th(x, theta, right_cut_width, margin)
 %
 % inputs:
 % x - input 2d thermal image
-% min_temp - minimal temperature in photo
-% max_temap - maximal temperature in photo
 % theta - conterclockwise rotation
 % right_cut_width - width of the colormap stride
 % margin - margin to eliminate frame of photo
