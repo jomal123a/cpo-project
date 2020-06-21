@@ -8,8 +8,10 @@ g = (0:255)';
 b = (0:255)';
 for i=(1:256)
     if (i >= temp_min_s && i <= temp_max_s)
-        r(i) = 0;
-        g(i) = 255;
+        a = i - temp_min_s;
+        norm = a / (temp_max_s - temp_min_s);
+        r(i) = norm * 255;
+        g(i) = 0;
         b(i) = 0;
     end
 end
